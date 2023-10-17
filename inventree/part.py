@@ -237,7 +237,7 @@ class PartRelated(inventree.base.InventreeObject):
         return api.post(cls.URL, data)
 
 
-class Parameter(inventree.base.InventreeObject):
+class Parameter(inventree.base.InventreeObject, inventree.base.MetadataMixin):
     """class representing the Parameter database model """
     URL = 'part/parameter'
 
@@ -245,6 +245,11 @@ class Parameter(inventree.base.InventreeObject):
         """ Get the units for this parameter """
 
         return self._data['template_detail']['units']
+    
+    def getname(self):
+        """ Get the name for this parameter """
+
+        return self._data['template_detail']['name']
 
 
 class ParameterTemplate(inventree.base.InventreeObject):

@@ -1,3 +1,7 @@
+# InvenTree exploration and tests
+InvenTree_API_Tests/InvenTree_API_Exploration.ipynb
+InvenTree_API_Tests/
+
 # Don't track cred file!
 inventree_credentials.py
 
@@ -13,6 +17,8 @@ test/data/
 test/*.tmp
 test/output.png
 
+tmp/
+
 # General python / dev stuff
 *.pyc
 .pypirc
@@ -22,3 +28,4 @@ dist
 build
 inventree.egg-info
 .vscode/
+.venv/
